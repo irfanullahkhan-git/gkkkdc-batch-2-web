@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <script>
+        console.log("Hello World", "Govt College", 123, "Nowshera");
+        let num1 = 10;
+        let num2 = 20;
+
+        let sum = num1 + num2;
+        let name = "Ali";
+        console.log("Sum is: ", sum);
+        console.log("My name is ", name);
+
+        let gpa = 3.2;
+        console.log("My GPA is ", gpa);
+
+        let isEligible = true;
+        console.log("Boolean value ", isEligible);
+
+        let myHobbies = ["Cricket", "Cooking"];
+        console.log("My hobbies: ", myHobbies);
+
+        if(gpa > 3){
+            console.log("you are eligible");
+        }else{
+            console.log("try again");
+        }
+
+        let alphabet = 'a';
+
+        switch(alphabet){
+            case 'a':
+                console.log("Vowel");
+                break;
+            default:
+                console.log("consonant");
+        };
+
+        for(let index = 0; index < 10; index++){
+            console.log("index value", index);
+        }
+
+        let number = 12345;
+        let reverse = 0;
+        console.log("Actual Number", number);
+        while(number > 0){
+            reverse = reverse * 10;
+            reverse = reverse + (number % 10);
+            number = Math.floor(number / 10);
+        }
+        console.log("Reverse Number", reverse);
+
+    </script>
+</head>
+<body>
+    <form>
+        <lable>Name</lable>
+        <input type="text" />
+        <br/>
+        <input type="button" value="Save" onclick="alert('Hi, How are you?')"/>
+    </form>
+</body>
+</html>

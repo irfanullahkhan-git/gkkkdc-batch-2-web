@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Grid Layout</title>
+        <style>
+            .main_container{
+                /* display: grid;
+                grid-template-columns: 1fr 2fr 1fr; 
+                grid-template-columns: 200px 1fr 1fr; 
+                gap: 20px; */
+
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: 100px auto 100px;  /* header, content, footer */
+                gap: 15px;
+            }
+            .sub_container{
+                height: 40px;
+                background-color: blanchedalmond;
+                border: 2px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main_container">
+            <div class="sub_container">Cell 1</div>
+            <div class="sub_container">Cell 2</div>
+            <div class="sub_container">Cell 3</div>
+        </div>
+    </body>
+</html>

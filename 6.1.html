@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+
+        /* -- Reset & Body -- */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* -- ID Selector -- */
+        #page-title {
+            text-align: center;
+            font-size: 36px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #2c3e50;
+        }
+
+        /* -- Grouping Selector -- */
+        h2, h3 {
+            color: #e74c3c;
+            text-decoration: underline;
+        }
+
+        /* -- Class Selector -- */
+        .card {
+            background-color: #ffffff;
+            border: 2px solid #cccccc;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px auto;
+            width: 60%;
+        }
+
+        /* -- Descendant Selector -- */
+        .card p {
+            line-height: 1.8;
+            font-size: 16px;
+            color: #555555;
+        }
+
+        /* -- RGBA background -- */
+        .highlight {
+            background-color: rgba(231, 76, 60, 0.15);
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        /* -- Box model demo -- */
+        .box {
+            width: 200px;
+            height: 100px;
+            background-color: steelblue;
+            color: white;
+            padding: 15px;
+            margin: 20px auto;
+            border: 3px dashed #333;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1 id="page-title">CSS Lesson 5</h1>
+
+    <div class="card">
+        <h2>Box Model</h2>
+        <p>
+            Every element is a box. We control its size with
+            <strong>width</strong> and <strong>height</strong>,
+            its inner spacing with <strong>padding</strong>,
+            and its outer spacing with <strong>margin</strong>.
+        </p>
+
+        <div class="box">I am a box!</div>
+    </div>
+
+    <div class="card">
+        <h2>Text Styling</h2>
+        <p class="highlight">
+            This paragraph has a transparent red background using
+            <strong>rgba()</strong> color.
+        </p>
+        <p>
+            Good typography uses <em>line-height</em> for breathing room,
+            <em>letter-spacing</em> for headings, and the right
+            <em>font-family</em> for the mood of the page.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Descendant Selector</h3>
+        <p>
+            The style rule <code>.card p { color: #555; }</code> applies
+            only to paragraphs that are <strong>inside</strong> a .card div.
+        </p>
+    </div>
+
+</body>
+</html>

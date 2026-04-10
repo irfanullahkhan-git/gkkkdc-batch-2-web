@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            .container{
+                width: 50%;
+                height: 100px;
+                margin: auto;
+                background-color: blueviolet;
+
+                text-align: center;
+            }
+
+            /* 0 - 320 -> width: 100% */
+
+            @media (max-width: 320px) {
+                .container{
+                    width: 100%;
+                    background-color: brown;
+                }
+                .container h2{
+                    display: none;
+                }
+            }
+        </style>
+        <!-- <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+        <title>Media Query</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Welcome to Govt Khushal Khan College</h1>
+            <h2>Equipped with state of the art labs</h2>
+        </div>
+    </body>
+</html>
